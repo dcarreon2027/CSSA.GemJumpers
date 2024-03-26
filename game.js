@@ -28,7 +28,6 @@ window.onload = function (event) {
 }
 
 var score1 = document.getElementById('score1')
-var score2 = document.getElementById('score2')
 var gem = document.getElementById('gem')
 
 var gemX, gemY;
@@ -132,7 +131,7 @@ function check() {
 
 }
 
-var time = 90;
+var time = 10;
 var countdownEl = document.getElementById('timer');
 var B1score = 0;
 var B2score = 0;
@@ -384,8 +383,6 @@ function animate() {
     if (time < -1) {
         return;
     }
-
-    
 
     player.draw()
     player2.draw()
