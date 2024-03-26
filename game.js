@@ -394,15 +394,3 @@ function animate() {
 }
 
 animate()
-
-//loading screen
-window.addEventListener('load', function () {
-    var loadingScreen = document.querySelector('.loading-screen');
-    setTimeout(function () {
-        loadingScreen.style.transition = 'opacity 1.5s ease-in-out';
-        loadingScreen.style.opacity = '0';
-        setTimeout(function () {
-            loadingScreen.style.display = 'none';
-        }, 1500);  
-    }, 1700); 
-});
